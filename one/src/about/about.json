@@ -1,0 +1,19 @@
+{
+    "layout":"layouts/base.html",
+    "pageId":"about",
+
+    "items": [
+        {
+            "name": "Omar",
+            "age": "12"
+        },
+        {
+            "name": "Hani",
+            "age": "22"
+        },
+        {
+            "name": "Roka",
+            "age": "10"
+        }
+    ]
+}

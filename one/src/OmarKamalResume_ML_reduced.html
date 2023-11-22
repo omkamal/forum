@@ -1,0 +1,2177 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    <title>Omar Kamal Hosney</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <!-- <script src="https://kit.fontawesome.com/ae62dc4b1e.js" crossorigin="anonymous"></script>-->
+
+    <style>
+        /********************************************
+      * 	reset from
+      * 	http://meyerweb.com/eric/tools/css/reset/
+      *******************************************/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+        }
+
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        /****************
+        *	COMMONS
+        ****************/
+
+        body,
+        html {
+            font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-size: 13px;
+            color: #40484f;
+            font-weight: 400;
+            letter-spacing: 0;
+            line-height: 1.46153846;
+            text-align: left;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        p {
+            display: block;
+            margin-bottom: 1.3em;
+        }
+
+        a {
+            color: #0095ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #0c65a5;
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-top: 1rem;
+        }
+
+        li {
+            list-style-type: square;
+            list-style-position: outside;
+            margin-left: 1.3em;
+        }
+
+        .highlights > li > p {
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-size: 1.67rem;
+        }
+
+        h3 {
+            font-size: 1.27rem;
+        }
+
+        em {
+            color: #757575;
+        }
+
+        blockquote {
+            margin-bottom: 1em;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+
+        /* main container */
+
+        #resume {
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+
+        /* every section wrapper */
+
+        .section {
+            margin-bottom: 1rem;
+        }
+
+        section .location {
+            margin-right: .5em;
+            color: #606d76;
+            font-weight: 700;
+        }
+
+        #contact {
+            margin-top: .5rem;
+        }
+
+        #profiles .item {
+            padding: 0;
+        }
+
+        #header > #profiles,
+        #header > #contact,
+        #skills,
+        #languages,
+        #interests {
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+            -webkit-justify-content: flex-start;
+            justify-content: flex-start;
+        }
+
+        #header > div {
+            line-height: 1.5;
+        }
+
+        #header > div > div {
+            margin-right: 1.2em;
+        }
+
+        #header h1.name {
+            font-size: 2.8rem;
+            font-weight: 100;
+            line-height: 100%;
+        }
+
+        #header h2.label {
+            color: #202931;
+            font-size: 1.47rem;
+            font-weight: 300;
+        }
+
+        #header .picture {
+            width: 11em;
+            float: right;
+            border-radius: 4px;
+        }
+
+        .main-summary {
+            background: #f1f8ff;
+            padding: 1.2em 1em;
+            margin-top: 1rem;
+        }
+
+        .main-summary p {
+            margin: .15em 0 0;
+        }
+
+        h2.section-title {
+            display: inline-block;
+            background: #fff;
+            padding: 0 1em 0.3em 0;
+            color: #ff6d1f;
+            text-transform: uppercase;
+            font-weight: 600;
+            border: none;
+            font-size: .9rem;
+        }
+
+        .section > header {
+            position: relative;
+        }
+
+        .fa {
+            margin-right: 0.25em;
+        }
+
+        .section > header::after {
+            position: absolute;
+            left: 0;
+            top: .7em;
+            height: 1px;
+            background: #ccc;
+            content: "";
+            width: 100%;
+            z-index: -100;
+            display: block;
+        }
+
+        .section.main-summary > section {
+            margin: 0;
+        }
+
+        .section > section > header {
+            font-size: 1.38rem;
+            position: relative;
+            margin-top: .7em;
+        }
+
+        .section > section > header:first-of-type {
+            margin: 0;
+        }
+
+        .section > section > header .space-left {
+            position: absolute;
+            left: -1.56rem;
+            top: 5px;
+            color: #aaa;
+            line-height: 1;
+            opacity: 0;
+        }
+
+        .position,
+        .company,
+        .organization,
+        .institution,
+        .provider,
+        .date,
+        .area,
+        .subjects,
+        .studyType,
+        .title,
+        .awarder {
+            display: inline;
+        }
+
+        .position,
+        .studyType,
+        .area,
+        .title,
+        .language,
+        .name {
+            font-weight: 600;
+        }
+
+        .company::before,
+        .institution::before,
+        .organization::before,
+        .awarder::before {
+            content: "at "
+        }
+
+        .company,
+        .institution,
+        .courses,
+        .organization,
+        .provider,
+        .awarder {
+            color: #606d76;
+            font-weight: 400;
+        }
+
+        .section header .date {
+            font-size: 1rem;
+            display: inline-table;
+            padding: .1em 0;
+            font-weight: 600;
+        }
+
+        ul.keywords,
+        ul.courses {
+            margin-top: .5em;
+        }
+
+        ul.keywords li,
+        ul.courses li {
+            display: inline-block;
+            margin: 2px 2px 2px 0;
+            padding: 4px 5px 5px;
+            font-size: .9rem;
+            line-height: 1;
+            color: #3e6d8e; 
+            /* background-color: #dfeaf1; */
+            border: 0 solid #dfeaf1;
+            white-space: nowrap;
+        }
+
+        ul.courses li {
+            text-transform: lowercase;
+        }
+        
+            
+
+        ul.keywords li:hover,
+        ul.courses li:hover {
+            background: #dfeaf0;
+        }
+
+        .item {
+            padding: .5em 0;
+        }
+
+        .gpa {
+            padding-bottom: .5em;
+        }
+
+        .fa.social {
+            font-size: 1.1em;
+        }
+
+
+        /* Social Media Brand Colors */
+
+        .google-plus {
+            color: #dd4b39;
+        }
+
+        .tumblr {
+            color: #32506d;
+        }
+
+        .foursquare {
+            color: #0072b1;
+        }
+
+        .facebook {
+            color: #3b5998;
+        }
+
+        .linkedin {
+            color: #007bb6;
+        }
+
+        .pinterest {
+            color: #cb2027;
+        }
+
+        .dribbble {
+            color: #ea4c89;
+        }
+
+        .instagram {
+            color: #517fa4;
+        }
+
+        .twitter {
+            color: #00aced;
+        }
+
+        .soundcloud {
+            color: #ff3a00;
+        }
+
+        .wordpress {
+            color: #21759b;
+        }
+
+        .youtube {
+            color: #bb0000;
+        }
+
+        .github {
+            color: #171515;
+        }
+
+        .stack-overflow {
+            color: #828386;
+            position: relative;
+        }
+
+        .flickr {
+            color: #ff0084;
+        }
+
+        .stack-overflow::after {
+            position: absolute;
+            left: 0;
+            content: '\f16c';
+            color: #f68a1f;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        .telegram {
+            color: #2291c3;
+        }
+
+        #languages .item,
+        #skills .item,
+        #interests .item {
+            width: 15em;
+            padding: 0 .5em .5em 0;
+            border-bottom: none;
+        }
+
+        #skills .item {
+            width: 16em;
+        }
+
+        #skills .item .keywords {
+            width: 15em;
+        }
+
+
+        /* Skill chart */
+
+        .level {
+            margin-bottom: .5em;
+        }
+
+        .level .bar {
+            border: 1px solid #ddd;
+            display: block;
+            width: 10em;
+            height: 5px;
+            position: relative;
+        }
+
+        .level .bar::after {
+            position: absolute;
+            content: " ";
+            top: 0;
+            left: 0;
+            background: black;
+            height: 5px;
+        }
+
+        .level.beginner .bar::after {
+            background: #EB5F51;
+            width: 2.5em;
+        }
+
+        .level.intermediate .bar::after {
+            background: #ffdf1f;
+            width: 5em;
+        }
+
+        .level.advanced .bar::after,
+        .level.fluent .bar::after {
+            background: #5CB85C;
+            width: 7.5em;
+        }
+
+        .level.master .bar::after,
+        .level.native.speaker .bar::after {
+            background: #59C596;
+            width: 10em;
+        }
+
+        #references .item {
+            padding-left: .5em;
+            border-left: 5px solid #ff6d1f;
+        }
+
+        .toggle-item {
+            visibility: hidden;
+        }
+
+        /******************
+        *	HELPER CLASSES
+        ******************/
+
+        .clear::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .display {
+            display: block;
+            opacity: 1 !important;
+        }
+
+        .margin1 {
+            margin-bottom: .5rem;
+        }
+
+
+        /****************
+        *		TABLET
+        ****************/
+
+        @media screen and (min-width: 602px) {
+            #resume {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+
+        /****************
+        *		LAPTOP
+        ****************/
+
+        @media screen and (min-width: 1025px) {
+            li {
+                margin-left: 1.5em;
+            }
+
+            #resume {
+                width: 820px;
+                margin: 2rem auto;
+            }
+
+            .section > section > header .space-left {
+                opacity: 1;
+                cursor: pointer;
+            }
+
+            .section > section {
+                margin-left: 1.67rem;
+            }
+
+            .toggle-item {
+                transform: translate(-9999px);
+            }
+
+            .toggle-item + label {
+                display: block;
+                margin-top: -16px;
+            }
+
+            .toggle-item:checked + label:after {
+                content: '\f0d7';
+            }
+
+            .toggle-item + label:after {
+                float: left;
+                cursor: pointer;
+                margin-left: -20px;
+                color: #aaa;
+                font-size: 16px;
+                content: '\f0da';
+                font-family: Fontawesome;
+            }
+
+            .toggle-item ~ .item {
+                height: 0;
+                opacity: 0;
+            }
+
+            .toggle-item:checked ~ .item {
+                height: auto;
+                opacity: 1;
+                transition: all .5s linear;
+            }
+
+            .company::before,
+            .institution::before,
+            .organization::before,
+            .awarder::before {
+                content: "| ";
+            }
+
+            .header-left {
+                float: left;
+                width: 70%;
+                word-break: normal;
+            }
+
+            .section header .date {
+                float: right;
+                padding: .2em;
+            }
+
+            .display {
+                display: none;
+            }
+
+            .display:not(.none) {
+                display: block;
+            }
+        }
+
+        @media print {
+            #resume {
+                margin: 0;
+                padding: 0;
+                -ms-word-wrap: break-word;
+                word-wrap: break-word;
+                line-height: 1.3;
+                /*font-family: Arial, Georgia, "Lucida Grande", sans-serif;*/
+            }
+
+            @page {
+                margin: 1cm 1.4cm;
+            }
+
+            .item-count {
+                display: none;
+            }
+
+            .company::before,
+            .institution::before,
+            .organization::before,
+            .awarder::before {
+                content: "at ";
+            }
+
+            .main-summary {
+                padding: 2rem 0;
+            }
+
+            .section {
+                margin: .8rem 0;
+                padding: 0;
+            }
+
+            .section header {
+                padding-bottom: .15rem;
+            }
+
+            .section .location {
+                padding-bottom: .15rem;
+            }
+
+            .stack-overflow::after {
+                content: "";
+            }
+
+            .fa.social {
+                color: #828386;
+            }
+
+            ul {
+                margin-top: .4em;
+            }
+
+            ul,
+            li {
+                padding: 0;
+            }
+
+            ul.keywords li,
+            ul.courses li,
+            ul.title li {
+                margin: 0;
+                padding: 0;
+                font-size: .8rem;
+                text-transform: lowercase;
+            }
+
+            ul.keywords li::after,
+            ul.courses li::after,
+            ul.title li::after {
+                padding: 0 0 0 .1rem;
+                content: " |";
+            }
+
+            ul.keywords::before,
+            ul.courses::before,
+            ul.title::before {
+                font-size: .8rem;
+                font-weight: 600;
+            }
+
+            ul.keywords::before {
+                content: "Skills acquired: ";
+            }
+
+            ul.relationship::before {
+                font-size: .8rem;
+                font-weight: 600;
+                content: "Relationship: ";
+            }
+
+
+            #skills .keywords::before {
+                content: '';
+            }
+
+            ul.title::before {
+                content: "Title: ";
+                font-style: italic; /* This line will make the font italic */
+            }
+
+            ul.title li {
+                font-style: italic; /* This line will make the list items under "title" italic */
+            }
+
+
+            .section p {
+                margin: 0;
+                padding: 0;
+            }
+
+            ul.courses::before {
+                content: "Major courses: ";
+            }
+
+            ul.keywords li:last-of-type::after,
+            ul.courses li:last-of-type::after {
+                content: "";
+            }
+
+            .level em {
+                font-style: normal;
+                padding: .1em 0;
+            }
+
+            .level .bar {
+                display: none;
+            }
+
+            #profiles .item {
+                padding: 0;
+            }
+
+            .item.display {
+                display: block;
+                opacity: 1 !important;
+            }
+        }
+
+        /* Courses section */
+        .courses {
+            display: flex;
+            flex-wrap: wrap; /* Enables the multi-column layout */
+            gap: 1rem; /* Spacing between courses */
+            padding: 0; /* Adjust padding to your preference */
+        }
+
+        .courses header {
+            font-size: 1.38rem;
+            width: 100%; /* Full width for the header */
+            margin-top: .7em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Pushes the title and item count apart */
+        }
+
+        .courses-item {
+            flex: 1 1 calc(50% - 1rem); /* Assigns 50% width to each item, accounting for the gap */
+            padding: .5em; /* Adjust padding to your preference */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Optional: adds a subtle shadow for depth */
+            margin-bottom: 1rem; /* Spacing between rows of courses */
+        }
+
+        .courses-item header {
+            display: flex;
+            justify-content: space-between; /* Adjust the space between the provider and the URL */
+            margin-bottom: 0.5em;
+        }
+
+        .courses-item .subject {
+            list-style: none; /* Removes default list styling */
+            padding: 0;
+            margin: 0; /* Removes default margin to save space */
+            columns: 2; /* Creates a two-column list for subjects */
+            column-gap: 1rem; /* Spacing between the columns */
+        }
+
+        .courses-item .subject li p {
+            margin: 0; /* Removes margin from paragraphs */
+            font-size: 0.9rem; /* Smaller font size for compactness */
+        }
+
+        .courses-item .provider {
+            font-size: 0.9rem; /* Adjust this value to decrease the font size */
+            color: #333; /* Optional: change the text color to make it less prominent */
+            margin-bottom: 0.2rem; /* Add some space below the provider name */
+        }
+
+
+        @media (max-width: 768px) {
+            /* Adjust for mobile screens */
+            .courses-item {
+                flex-basis: 100%; /* Each course takes full width on smaller screens */
+            }
+        }
+
+
+        .section .references {
+            column-count: 2; /* Creates a two-column layout */
+            column-gap: 1rem; /* Space between columns */
+            max-width: 100%; /* Ensures the columns don't overflow the section width */
+        }
+
+        .section .references .item {
+            padding: 0.25rem 0;
+            border-left: none;
+            margin-bottom: 0.25rem;
+            break-inside: avoid-column; /* Prevents items from being split across columns */
+            page-break-inside: avoid; /* Prevents items from being split across pages in PDF */
+        }
+
+        .section .references .name {
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+            font-size: 0.9rem; /* Slightly smaller font size for names */
+        }
+
+        .section .references .title {
+            font-style: italic;
+            color: #757575;
+            margin-bottom: 0;
+            font-size: 0.85rem; /* Slightly smaller font size for titles */
+        }
+
+        .section .references .relation {
+            color: #606d76;
+            font-size: 0.8rem; /* Smaller font size for relations */
+            margin-bottom: 0.1rem;
+        }
+
+        .section .references .bar {
+            display: none;
+        }
+
+        .publications-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .publication-item {
+            border-bottom: 1px solid #eee;
+            padding: 0.5rem 0;
+        }
+
+        .publication-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .header-left .publication-name {
+            font-weight: 600; /* Bold for title */
+            display: block; /* Makes the title stand on its own line */
+            margin-bottom: 0.25rem;
+        }
+
+        .header-left .publication-publisher {
+            display: block; /* Makes the publisher stand on its own line */
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .publication-date {
+            font-size: 0.8rem;
+            color: #999;
+            text-align: right;
+        }
+
+        .publication-summary p {
+            font-style: italic; /* Italicize the summary */
+            color: #666;
+            margin-top: 0; /* Removes the default top margin from paragraphs */
+            margin-bottom: 1rem; /* Provides spacing after the summary */
+        }
+
+        .toggle-item {
+            display: none; /* Hides the checkbox as it does not mention its purpose */
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div id="resume">
+    <header id="header" class="clear">
+        <div>
+            
+
+        </div>
+        <div>
+            <h1 class="name">Omar Kamal Hosney</h1>
+            <h2 class="label">Machine Learning Software Engineer / Individual Contributor</h2>
+        </div>
+        
+        
+        <span class="location">
+    			<span class="address">1999 Cape Horn Dr., San Jose, CA 95133,</span>
+    			<span class="postalCode">,</span>
+    			<span class="city">San Jose,</span>
+    			<span class="region">CA</span>
+    			<span class="countryCode"></span>
+    		</span>
+
+        <div id="contact">
+            <div class="email">
+                <span class="fa fa-envelope-o"></span>
+                <a href="mailto:omkamal@gmail.com">omkamal@gmail.com</a>
+            </div>
+            <div class="phone">
+                <span class="fa fa-mobile"></span>
+                <a href="tel:(510)-766-8553">(510)-766-8553</a>
+            </div>
+        </div>
+
+        <div id="profiles">
+            
+            <div class="item">
+                <div class="username">
+                    <span class="fa fa-twitter twitter social"></span>
+                    
+                    <span class="url">
+    						<a target="_blank" href="https://twitter.com/omkamal">omkamal</a>
+    					</span>
+                    
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="username">
+                    <span class="fa fa-linkedin linkedin social"></span>
+                    
+                    <span class="url">
+    						<a target="_blank" href="https://www.linkedin.com/in/omarebnelkhattab-hosney-9a931b3/">omarebnelkhattab-hosney-9a931b3</a>
+    					</span>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </header>
+
+    <section class="section main-summary">
+        <section>
+            <div><p>As a proficient data scientist, my focus in the last 6+ years has been on machine learning and deep learning, enhancing capabilities at Tribal Credit, Reveel, TA Telecom, Mentor Graphics, and IBM. Skilled in AI-driven underwriting, algorithm development, data analytics, and software testing, I hold a Bachelor&#39;s in Electrical and Electronics Engineering and an MBA. My expertise in Python, large language models, statistical analysis, and AWS equips me to drive innovative, data-driven solutions in various sectors.</p></div>
+        </section>
+    </section>
+
+    <section class="section margin1">
+        <header>
+            <h2 class='section-title'>Skills</h2>
+        </header>
+        <section id="skills">
+            
+            <div class="item">
+                <h3 class="name">
+                    Statistical Analysis
+                </h3>
+
+                <div class="level.advanced">
+                    <em>advanced</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-4"></span> Hypothesis Testing</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Non-parametric Statistics</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Multivariate Statistics</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Time Series Analysis</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Experimental Design</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Data Science
+                </h3>
+
+                <div class="level.master">
+                    <em>master</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-4"></span> Associative Analysis</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Network Analysis</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Natural Language Processing</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Analytical Hierarchy Process</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> A/B Testing</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Machine Learning
+                </h3>
+
+                <div class="level.advanced">
+                    <em>advanced</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-3"></span> Scikit-learn</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Deep Learning</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> SVM</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Clustering</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> XGBoost</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Random Forests</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Lasson &amp; Ridge</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> CatBoost</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Feature Engineering</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Ensemble Methods</li>
+                    
+                    <li> <span class="fa fa-battery-1"></span> PyTorch</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Generative AI / LLM
+                </h3>
+
+                <div class="level.advanced">
+                    <em>advanced</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-4"></span> OpenAI</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Langchain</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Anthropic</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> BERT</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> GPT2</li>
+                    
+                    <li> <span class="fa fa-battery-1"></span> llama-index</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Python Programming
+                </h3>
+
+                <div class="level.master">
+                    <em>master</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-4"></span> Python</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Pandas &amp; NumPy</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Scikit-learn</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> FastAPI</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Seaborn</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Network-x</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> arules</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Matplotlib</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Dashboarding
+                </h3>
+
+                <div class="level.advanced">
+                    <em>advanced</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-4"></span> Streamlit</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Tableau</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Elastic Kibana</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Gradio</li>
+                    
+                    <li> <span class="fa fa-battery-1"></span> Looker</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Data warehousing
+                </h3>
+
+                <div class="level.beginner">
+                    <em>beginner</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-2"></span> ETL Processes</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Apache Airflow</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Redis</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Snowflake</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Databases (SQL, NoSQL)</li>
+                    
+                    <li> <span class="fa fa-battery-1"></span> Kafka</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    DevOps and IDE
+                </h3>
+
+                <div class="level.intermediate">
+                    <em>intermediate</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-3"></span> (CI/CD)</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Docker</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> Kubernetes</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Git</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Elastic Stack</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Jupyter Notebooks</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> MLflow</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Amazon Web Services (AWS)
+                </h3>
+
+                <div class="level.intermediate">
+                    <em>intermediate</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-3"></span> EC2</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> Lambda</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> RDS</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> Boto3</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> DynamoDB</li>
+                    
+                    <li> <span class="fa fa-battery-4"></span> S3</li>
+                    
+                    <li> <span class="fa fa-battery-3"></span> SageMaker Notebooks</li>
+                    
+                </ul>
+            </div>
+            
+            <div class="item">
+                <h3 class="name">
+                    Other Programming languages
+                </h3>
+
+                <div class="level.intermediate">
+                    <em>intermediate</em>
+                    <div class="bar"></div>
+                </div>
+                <ul class="keywords">
+                    
+                    <li> <span class="fa fa-battery-3"></span> R</li>
+                    
+                    <li> <span class="fa fa-battery-2"></span> SQL</li>
+                    
+                    <li> <span class="fa fa-battery-0"></span> C, C++</li>
+                    
+                </ul>
+            </div>
+            
+        </section>
+    </section>
+    <section class="section">
+        <header>
+            <h2 class='section-title'> <span class="fa fa-building"> </span> Work Experience <span class="item-count">(5)</span></h2>
+        </header>
+        <section id="work">
+        
+            <section class="work-item">
+                <span class="position">
+                    Chief Data Scientist and founding team member
+                </span>
+                
+                
+                <span class="company">
+                    Tribal Credit
+                </span>
+
+                <div>
+
+                    <span class="startDate">
+                        2017-10-15
+                    </span> 
+                    
+                    
+                            <span class="endDate">
+                            to Present
+                            </span>
+                    
+                    
+                    <span class="location">
+                        <span class="fa fa-map-marker"> San Francisco </span>
+                    </span>
+
+                </div>
+                  
+    			
+                <div class="item">
+                    <div class="summary">
+                    
+                        <p>Tribal Credit is a fintech solution for startups and SMEs, offering specialized credit products and a platform to manage business expenses efficiently.</p>
+                    </div>    
+
+                    <div class="summary">
+                        <p><p>As a founding team member, I used my analytical skills, deep learning, and Python, in developing core products, scientific models, and statistical products for business and customer dynamics.</p></p>
+                    </div>
+                    
+                    <ul class="highlights">
+                        
+                        <li><p>Large Language Model</p></li>
+                        
+                        <li><p>Machine Learning and Data Science</p></li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+        
+            <section class="work-item">
+                <span class="position">
+                    Chief Data Scientist and founding team member
+                </span>
+                
+                
+                <span class="company">
+                    Reveel
+                </span>
+
+                <div>
+
+                    <span class="startDate">
+                        2015-10-15
+                    </span> 
+                    
+                    
+                        <span class="endDate">
+	    			        to 2017-10-15
+                        </span>
+                    
+                    
+                    <span class="location">
+                        <span class="fa fa-map-marker"> San Fransisco </span>
+                    </span>
+
+                </div>
+                  
+    			
+                <div class="item">
+                    <div class="summary">
+                    
+                        <p>Stealth startup based out of San Francisco, CA that focuses on analytics for any business that monetizes from subscription revenues.</p>
+                    </div>    
+
+                    <div class="summary">
+                        <p><p>Developed a patent-pending algorithm to optimize business configuration, enhancing customer retention, particularly for SaaS products.</p></p>
+                    </div>
+                    
+                    <ul class="highlights">
+                        
+                        <li><p>Data Science, Machine Learning and Statistics</p></li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+        
+            <section class="work-item">
+                <span class="position">
+                    Chief Data Scientist
+                </span>
+                
+                
+                <span class="company">
+                    TA telecom
+                </span>
+
+                <div>
+
+                    <span class="startDate">
+                        2014-11-15
+                    </span> 
+                    
+                    
+                        <span class="endDate">
+	    			        to 2015-10-01
+                        </span>
+                    
+                    
+                    <span class="location">
+                        <span class="fa fa-map-marker"> Cairo, Egypt </span>
+                    </span>
+
+                </div>
+                  
+    			
+                <div class="item">
+                    <div class="summary">
+                    
+                        <p></p>
+                    </div>    
+
+                    <div class="summary">
+                        <p><p>Spearheaded data analytics integration across departments, leading a data science team and applying advanced statistical methods and tools.</p></p>
+                    </div>
+                    
+                    <ul class="highlights">
+                        
+                        <li><p>R</p></li>
+                        
+                        <li><p>Statistical Analysis and Inference</p></li>
+                        
+                        <li><p>Machine Learning</p></li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+        
+            <section class="work-item">
+                <span class="position">
+                    SW Testing Manager
+                </span>
+                
+                
+                <span class="company">
+                    Mentor Graphics
+                </span>
+
+                <div>
+
+                    <span class="startDate">
+                        2006-10-01
+                    </span> 
+                    
+                    
+                        <span class="endDate">
+	    			        to 2014-11-01
+                        </span>
+                    
+                    
+                    <span class="location">
+                        <span class="fa fa-map-marker"> Cairo, Egypt </span>
+                    </span>
+
+                </div>
+                  
+    			
+                <div class="item">
+                    <div class="summary">
+                    
+                        <p>Mentor Graphics was a US-based multinational corporation specializing in electronic design automation (EDA).</p>
+                    </div>    
+
+                    <div class="summary">
+                        <p><p>Led software testing for D2S products, introduced Six Sigma initiatives, and managed the Silicon Software testing team, enhancing product quality.</p></p>
+                    </div>
+                    
+                    <ul class="highlights">
+                        
+                        <li><p>Software Testing, Quality Management and Six Sigma Initiatives</p></li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+        
+            <section class="work-item">
+                <span class="position">
+                    Software Engineer/Software Validation Lead
+                </span>
+                
+                
+                <span class="company">
+                    IBM
+                </span>
+
+                <div>
+
+                    <span class="startDate">
+                        2005-09-01
+                    </span> 
+                    
+                    
+                        <span class="endDate">
+	    			        to 2006-12-01
+                        </span>
+                    
+                    
+                    <span class="location">
+                        <span class="fa fa-map-marker"> Egypt </span>
+                    </span>
+
+                </div>
+                  
+    			
+                <div class="item">
+                    <div class="summary">
+                    
+                        <p></p>
+                    </div>    
+
+                    <div class="summary">
+                        <p><p>Focused on automotive embedded software development in C, creating test harnesses, and devising test plans with hardware tools.</p></p>
+                    </div>
+                    
+                    <ul class="highlights">
+                        
+                        <li><p>Embedded Software Development and Software Validation</p></li>
+                        
+                        <li><p>C Programming</p></li>
+                        
+                    </ul>
+
+                </div>
+            </section>
+        
+        </section>
+    </section>
+    <section class="section">
+        <header>
+            <h2 class='section-title'> <span class="fa fa-list"></span> Projects <span class="item-count">(10)</span></h2>
+        </header>
+        
+        
+        <section id="projects">
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">ChatGPT-4 Diagram Generation</div>
+                    <div class="date">
+                        <span class="entity">- Open-Source</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Developed an open-source prompt set for ChatGPT-4 to generate diverse diagrams using libraries like Mermaid and D3, culminating in a published guidebook. </span>
+
+                <span class="website">
+            <a target="_blank" href="https://a.co/d/5OSAIwl">https://a.co/d/5OSAIwl</a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>ChatGPT-4</li>
+                    
+                    <li>Mermaid</li>
+                    
+                    <li>D3</li>
+                    
+                    <li>PlantUML</li>
+                    
+                    <li>Diagram Generation</li>
+                    
+                    <li>Open-Source</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Child-Centric Conversational AI</div>
+                    <div class="date">
+                        <span class="entity">- Private Contract</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Created a Streamlit-based child-friendly chatbot using Langchain, GPT-4, and Pinecone&#39;s vector database, ensuring age-appropriate responses and secure parental control. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Python</li>
+                    
+                    <li>Streamlit</li>
+                    
+                    <li>Langchain</li>
+                    
+                    <li>OpenAI GPT-4</li>
+                    
+                    <li>Pinecone</li>
+                    
+                    <li>Vector Database</li>
+                    
+                    <li>ChromaDb</li>
+                    
+                    <li>Conversational AI</li>
+                    
+                    <li>WhatsApp</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Cash CoPilot</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Integrated ChatGPT 3.0 with Mexico&#39;s Tax System for real-time financial insights, using API data for comprehensive cash flow and financial health analysis. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>LLM</li>
+                    
+                    <li>ChatGPT</li>
+                    
+                    <li>OpenAI</li>
+                    
+                    <li>Python</li>
+                    
+                    <li>Financial Analysis</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Document-Based Question Answering System</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Developed an early ChatGPT-3 based legal query resolution system with innovative text chunking and Streamlit interface for Tribal Credit. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Python</li>
+                    
+                    <li>ChatGPT-3</li>
+                    
+                    <li>OpenAI API</li>
+                    
+                    <li>Streamlit</li>
+                    
+                    <li>Text Chunking</li>
+                    
+                    <li>REST APIs</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Lead Generation Experimentation Framework</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Created a novel framework for Tribal Credit&#39;s lead generation using pairwise testing, enhancing marketing strategy efficiency and resource utilization. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Pairwise Testing</li>
+                    
+                    <li>Design of Experiments</li>
+                    
+                    <li>Lead Generation</li>
+                    
+                    <li>Marketing Strategy</li>
+                    
+                    <li>Experimentation Framework</li>
+                    
+                    <li>Innovation</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Customer Spending Alert System</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Led the creation of an alert system at Tribal Credit, modernizing financial monitoring with Statistical Process Control methods and a Python package. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Python</li>
+                    
+                    <li>Statistical Process Control</li>
+                    
+                    <li>Financial Monitoring</li>
+                    
+                    <li>Data Visualization</li>
+                    
+                    <li>Shewhart</li>
+                    
+                    <li>Package Development</li>
+                    
+                    <li>Quality Control</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Startup Scoring and Visualization System</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Designed a system for scoring startups using machine learning and statistical techniques, presented through an Elastic Kibana dashboard for VCs. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Machine Learning</li>
+                    
+                    <li>Statistical Ranking</li>
+                    
+                    <li>Elasticsearch</li>
+                    
+                    <li>Elastic Kibana</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Bank Statement Parser</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Developed an advanced tool for parsing and classifying Mexican bank statements, emphasizing data security and user-friendly interface for financial analysis. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Python</li>
+                    
+                    <li>Machine Learning</li>
+                    
+                    <li>Asana</li>
+                    
+                    <li>DynamoDB</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Startup-VC Matching Algorithm</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Pioneered a matching system at Tribal Credit using word embeddings and cosine similarity to align startups with VCs&#39; investment portfolios. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>Python</li>
+                    
+                    <li>AWS Aurora</li>
+                    
+                    <li>AWS Lambda</li>
+                    
+                    <li>AWS API Gateway</li>
+                    
+                    <li>AWS DynamoDB</li>
+                    
+                    <li>Word Embeddings</li>
+                    
+                    <li>Cosine Similarity</li>
+                    
+                    <li>Serverless Architecture</li>
+                    
+                    <li>Venture Capital</li>
+                    
+                    <li>Startup Funding</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="project-item">
+                
+                <header>
+                    <div class="position">Inception Score</div>
+                    <div class="date">
+                        <span class="entity">- Tribal Credit</span>
+                        <span class="endDate">- </span>
+                    </div>
+                </header>
+
+                <span class="summary"> Collaborated on a machine learning algorithm at Tribal Credit to rank startups for VCs, combining Monte-Carlo simulation with advanced algorithms. </span>
+
+                <span class="website">
+            <a target="_blank" href=""></a>
+          </span>
+                <ul class="keywords">
+                    
+                    <li>R</li>
+                    
+                    <li>Machine Learning</li>
+                    
+                    <li>Monte-carlo Simulation</li>
+                    
+                    <li>XGBoost</li>
+                    
+                    <li>GLM</li>
+                    
+                    <li>Random Forests</li>
+                    
+                </ul>
+                <div class="item">
+                    <ul class="highlights">
+                        
+                    </ul>
+                </div>
+            </section>
+            
+        </section>
+    </section>
+
+    <section class="section">
+        <header>
+            <h2 class='section-title'> <span class="fa fa-university"> </span> </span> Education <span class="item-count">(3)</span></h2>
+        </header>
+
+        <section id="education">
+            
+            <section class="education-item">
+                <header>
+                    <div class="header-left">
+                        <div class="studyType">
+                            Master
+                        </div>
+                        <div class="area">
+                            Master of Business Administration
+                        </div>
+                        <div class="institution">
+                            City University of Seattle
+                        </div>
+                    </div>
+                    
+                </header>
+
+            </section>
+            
+            <section class="education-item">
+                <header>
+                    <div class="header-left">
+                        <div class="studyType">
+                            Diploma (pre-masters)
+                        </div>
+                        <div class="area">
+                            Computer Networking, and Software Programming
+                        </div>
+                        <div class="institution">
+                            Information Technology Institute
+                        </div>
+                    </div>
+                    
+                </header>
+
+            </section>
+            
+            <section class="education-item">
+                <header>
+                    <div class="header-left">
+                        <div class="studyType">
+                            Bachelor
+                        </div>
+                        <div class="area">
+                            Electrical and Electronics Engineering
+                        </div>
+                        <div class="institution">
+                            Cairo University
+                        </div>
+                    </div>
+                    
+                </header>
+
+            </section>
+            
+        </section>
+    </section>
+
+
+<section class="section">
+    <header>
+        <h2 class='section-title'><span class="fa fa-graduation-cap"></span> Courses <span class="item-count">(4)</span></h2>
+    </header>
+
+    <section class="courses">
+        
+        <section class="eduction-item">
+            <header>
+                <!-- Make the provider name a link -->
+                <div class="institution">
+                    <a target="_blank" href="https://www.coursera.org/">Coursera</a>
+                </div>
+            </header>
+            <div class="item">
+                <ul class="subject">
+                    
+                    <li><p>Machine Learning With Big Data</p></li>
+                    
+                    <li><p>Introduction to Big Data Analytics</p></li>
+                    
+                    <li><p>Hadoop Platform and Application Framework</p></li>
+                    
+                    <li><p>Data Science Specialization, Johns Hopkins</p></li>
+                    
+                    <li><p>Social Network Analysis</p></li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section class="eduction-item">
+            <header>
+                <!-- Make the provider name a link -->
+                <div class="institution">
+                    <a target="_blank" href="https://www.udacity.com/">Udacity</a>
+                </div>
+            </header>
+            <div class="item">
+                <ul class="subject">
+                    
+                    <li><p>Natural Language Processing Nanodegree</p></li>
+                    
+                    <li><p>The Deep Learning Nanodegree</p></li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section class="eduction-item">
+            <header>
+                <!-- Make the provider name a link -->
+                <div class="institution">
+                    <a target="_blank" href="">Systonomy</a>
+                </div>
+            </header>
+            <div class="item">
+                <ul class="subject">
+                    
+                    <li><p>Software and IT Six Sigma Black Belt</p></li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+        <section class="eduction-item">
+            <header>
+                <!-- Make the provider name a link -->
+                <div class="institution">
+                    <a target="_blank" href="">American Society for Quality</a>
+                </div>
+            </header>
+            <div class="item">
+                <ul class="subject">
+                    
+                    <li><p>Certified Quality Manager</p></li>
+                    
+                </ul>
+            </div>
+        </section>
+        
+    </section>
+</section>
+
+<section class="section">
+    <header>
+        <h2 class='section-title'><span class="fa fa-newspaper-o"></span> Publications</h2>
+    </header>
+    <section class="publications-list">
+        
+        <section class="publication-item">
+            <header class="publication-item-header">
+                <div class="header-left">
+                    <span class="publication-name">Diagrams as Code: Exploring Mermaid, PlantUML, D2 and Generating Diagrams using AI LLMs</span>
+                    <span class="publication-publisher">in Amazon</span>
+                </div>
+                <div class="website"> 
+                 <a target="_blank" href="https://a.co/d/5OSAIwl">https://a.co/d/5OSAIwl</a>
+                </div>
+                <span class="publication-date">2023-09-15</span>
+            </header>
+            
+        </section>
+        
+    </section>
+</section>
+
+    <section class="section margin1">
+        <header>
+            <h2 class='section-title'><span class="fa fa-language"></span> Languages</h2>
+        </header>
+        <section id="languages">
+            
+            <div class="display">
+                <h3 class="language">
+                    English
+                </h3>
+                <div class="item">
+                    <div class="level fluency fluent">
+                        <em>fluent</em>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="display">
+                <h3 class="language">
+                    Arabic
+                </h3>
+                <div class="item">
+                    <div class="level fluency native speaker">
+                        <em>native speaker</em>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+
+    
+</div>
+
+</body>
+</html>
